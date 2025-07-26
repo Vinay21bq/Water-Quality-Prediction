@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Quality Prediction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Water Quality Prediction</h1>
+        <p class="intro">This project aims to predict water quality using a deep learning model (CNN-LSTM). By analyzing key parameters such as temperature, pH, dissolved oxygen, and more, the system helps in determining whether the water quality is good or poor.</p>
+
+        <form id="predictionForm">
+            <label for="temperature">Temperature:</label>
+            <input type="number" id="temperature" name="temperature" required>
+
+            <label for="do">D.O:</label>
+            <input type="number" id="do" name="do" required>
+
+            <label for="ph">pH:</label>
+            <input type="number" id="ph" name="ph" required>
+
+            <label for="conductivity">Conductivity:</label>
+            <input type="number" id="conductivity" name="conductivity" required>
+
+            <label for="bod">B.O.D:</label>
+            <input type="number" id="bod" name="bod" required>
+
+            <label for="nitrate">Nitrate:</label>
+            <input type="number" id="nitrate" name="nitrate" required>
+
+            <label for="fecalcaliform">Fecalcaliform:</label>
+            <input type="number" id="fecalcaliform" name="fecalcaliform" required>
+
+            <label for="totalcaliform">Totalcaliform:</label>
+            <input type="number" id="totalcaliform" name="totalcaliform" required>
+
+            <button type="submit" class="submit-btn">Predict</button>
+        </form>
+
+        <div id="predictionResult">
+            <h3>Prediction Result:</h3>
+            <p id="predictionText">Please enter values to get a prediction.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
