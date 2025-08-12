@@ -1,7 +1,8 @@
 import streamlit as st
 import pickle
 import numpy as np
-from tensorflow.keras.models import load_model
+from tensorflow import keras
+model = keras.models.load_model("your_model.h5", compile=False)
 import json
 import tensorflow as tf
 
